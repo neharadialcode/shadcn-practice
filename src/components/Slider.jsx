@@ -23,8 +23,8 @@ export function Slider() {
                                 <Card className="p-0 bg-white">
                                     <CardContent className="flex flex-col pt-0">
                                         <Image width={357} className="rounded-2xl w-full max-h-[280px]" height={280} src={value.image} alt="image slider" />
-                                        <h3 className="font-semibold text-xl pt-4">{value.title}</h3>
-                                        <p className="font-normal text-sm pt-2">{value.description}</p>
+                                        <h3 className="font-semibold text-xl pt-4 text-[#090909]">{value.title}</h3>
+                                        <p className="font-normal text-sm pt-2 text-[#090909]">{value.description}</p>
                                         <button className="py-4 hover:bg-black hover:text-white duration-300 border-opacity-15 border rounded-3xl mt-4 text-base font-normal">More</button>
                                     </CardContent>
                                 </Card>
