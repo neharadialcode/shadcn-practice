@@ -9,6 +9,7 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import Image from "next/image"
+import { sliderCard } from "./Helper"
 
 export function Slider() {
     return (
@@ -17,7 +18,7 @@ export function Slider() {
             <Carousel className="w-full px-6 max-w-[1140px] mx-auto">
                 <CarouselContent>
                     {Array.from({ length: 4 }).map((_, index) => (
-                        <CarouselItem key={index} className="">
+                        <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                             <Card className="max-w-[357px] p-0 bg-white">
                                 <CardContent className="flex flex-col">
                                     <Image width={357} className="rounded-2xl" height={280} src="/assets/images/webp/slider_image_first.webp" alt="image slider" />
