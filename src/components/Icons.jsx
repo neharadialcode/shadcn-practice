@@ -33,10 +33,10 @@ export const StarsIcon = () => (
 
 export const CheckMark = () => (
   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g clip-path="url(#clip0_6006_137)">
+    <g clipPath="url(#clip0_6006_137)">
       <rect width="12" height="12" rx="6" fill="#D3756B" />
-      <g clip-path="url(#clip1_6006_137)">
-        <path d="M9.27539 3.84521L4.97852 8.14209L3.02539 6.18896" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <g clipPath="url(#clip1_6006_137)">
+        <path d="M9.27539 3.84521L4.97852 8.14209L3.02539 6.18896" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
       </g>
     </g>
     <defs>

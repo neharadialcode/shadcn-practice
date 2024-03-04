@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { RoasterKeyFeatures } from "./Helper";
+import { roasterKeyFeatures } from "./Helper";
 
 const RoasterTab = () => {
   return (
@@ -9,7 +9,6 @@ const RoasterTab = () => {
         <div className="flex lg:gap-10 gap-6 md:flex-row flex-col">
           <div className="md:w-4/12 flex justify-center md:block">
             <Image
-              className=""
               src="/assets/images/png/roaster_machine.png"
               height={320}
               width={320}
@@ -23,7 +22,7 @@ const RoasterTab = () => {
             <p className="sm:mb-6 mb-4 font-normal text-sm leading-[21px] text-[#090909]">
               <span className="font-medium text-black">
                 Coffee Machine Depot USA
-              </span>{" "}
+              </span>
               is proud to present the Gemma Countertop Coffee Roaster by Sweet
               Coffee USA. Gemma is an electric, fully automatic coffee roaster
               which doesn’t require knowledge in roasting coffee. The main
@@ -36,9 +35,9 @@ const RoasterTab = () => {
               Key Features
             </h4>
             <div className="flex flex-col sm:gap-3 gap-2">
-              {RoasterKeyFeatures.map((features, index) => {
+              {roasterKeyFeatures.map((features, index) => {
                 return (
-                  <div key={index.id} className="flex items-center gap-2">
+                  <div key={index} className="flex items-center gap-2">
                     <span>{features.checkIcon}</span>
                     <p className="text-sm font-normal leading-[19.6px] text-[#000d07]">
                       {features.feature}
