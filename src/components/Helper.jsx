@@ -56,3 +56,31 @@ export const RoasterKeyFeatures = [
     feature: "Consistency delivered by computerized roast master, same roast profile every time.",
   },
 ];
+export const sliderCard = [
+  {
+
+    image: "",
+    title: "1 Coffee Bean by Malerapaso",
+    description: "Plantilla de informe de resonancia magnética (RM) de articulación de Plantilla de informe de resonancia magnética (RM) de articulación de Plantilla de informe de resonancia magnética (RM) de articulación de",
+  },
+  {
+
+    image: "",
+    title: "2 Coffee Bean by Malerapaso",
+    description: "Plantilla de informe de resonancia magnética (RM) de articulación de Plantilla de informe de resonancia magnética (RM) de articulación de Plantilla de informe de resonancia magnética (RM) de articulación de",
+  },
+  {
+
+    image: "",
+    title: "3 Coffee Bean by Malerapaso",
+    description: "Plantilla de informe de resonancia magnética (RM) de articulación de Plantilla de informe de resonancia magnética (RM) de articulación de Plantilla de informe de resonancia magnética (RM) de articulación de",
+  },
+  {
+
+    image: "",
+    title: "Coffee Bean by Malerapaso",
+    description: "Plantilla de informe de resonancia magnética (RM) de articulación de Plantilla de informe de resonancia magnética (RM) de articulación de Plantilla de informe de resonancia magnética (RM) de articulación de",
+  },
+
+
+];
