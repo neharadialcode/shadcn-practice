@@ -5,7 +5,10 @@ import React from "react";
 const CoffeeGrid = () => {
   return (
     <div className="grid sm:grid-cols-3 grid-cols-2 max-w-[1920px] mx-auto">
-      <Link href="#" className="relative col-span-2 overflow-hidden">
+      <Link
+        href="#"
+        className="relative col-span-2 overflow-hidden border-[1px] border-solid border-white border-opacity-50"
+      >
         <Image
           className="w-full xl:h-[240px] h-full object-cover min-h-[100px] hover:scale-[1.1] transition-all duration-500"
           src="/assets/images/png/arabica_coffee.png"
@@ -22,9 +25,12 @@ const CoffeeGrid = () => {
           </p>
         </div>
       </Link>
-      <Link href="#" className="relative row-span-2 overflow-hidden">
+      <Link
+        href="#"
+        className="relative row-span-2 overflow-hidden border-[1px] border-solid border-white border-opacity-50"
+      >
         <Image
-          className="w-full xl:h-[480px] h-full object-cover hover:scale-[1.1] transition-all duration-500"
+          className="w-full xl:h-[482px] h-full object-cover hover:scale-[1.1] transition-all duration-500"
           src="/assets/images/png/robusta_coffee.png"
           alt="robusta_coffee"
           height={100}
@@ -39,7 +45,10 @@ const CoffeeGrid = () => {
           </p>
         </div>
       </Link>
-      <Link href="#" className="relative overflow-hidden">
+      <Link
+        href="#"
+        className="relative overflow-hidden border-[1px] border-solid border-white border-opacity-50"
+      >
         <Image
           className="w-full xl:h-[240px] h-full object-cover min-h-[100px] hover:scale-[1.1] transition-all duration-500"
           src="/assets/images/png/liberica_coffee.png"
@@ -56,7 +65,10 @@ const CoffeeGrid = () => {
           </p>
         </div>
       </Link>
-      <Link href="#" className="relative overflow-hidden">
+      <Link
+        href="#"
+        className="relative overflow-hidden border-[1px] border-solid border-white border-opacity-50"
+      >
         <Image
           className="w-full xl:h-[240px] h-full object-cover min-h-[100px] hover:scale-[1.1] transition-all duration-500"
           src="/assets/images/png/excelsa_coffee.png"

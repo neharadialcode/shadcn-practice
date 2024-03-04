@@ -4,6 +4,7 @@ import TabsComponents from "@/components/TabsComponents";
 import RoasterTab from "@/components/RoasterTab";
 import CoffeeGrid from "@/components/CoffeeGrid";
 import Slider from "@/components/Slider";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +15,7 @@ export default function Home() {
       <RoasterTab />
       <CoffeeGrid />
       <Slider />
+      <Footer/>
     </>
   );
 }

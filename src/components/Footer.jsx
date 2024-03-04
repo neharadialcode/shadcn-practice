@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { LocationIcon, MailIcon, PhoneIcon } from "./common/Icons";
+import { LocationIcon, MailIcon, PhoneIcon } from "./Icons";
 let currentYear = new Date().getFullYear();
 
 const Footer = () => {
   return (
-    <div>
-      <div className="bg-[url('/assets/png/footer-bg.png')] bg-cover xl:bg-[length:100%_100%] bg-center bg-no-repeat md:rounded-[32px_32px_0px_0px]">
-        <div className="custom_container container mx-auto py-12   px-4 lg:px-3">
+    <div className="mx-3">
+      <div className="max-w-[1360px] mx-auto bg-[url('/assets/footer-bg.png')] bg-cover xl:bg-[length:100%_100%] bg-center bg-no-repeat rounded-[32px_32px_0px_0px]">
+        <div className="max-w-[1232px] mx-auto md:pb-[55px] md:pt-12 py-12 xl:px-0 px-3">
           <div className="flex justify-between flex-wrap gap-4">
             <div className="w-full md:w-5/12">
               <div className="md:max-w-[378px]">
@@ -17,7 +17,7 @@ const Footer = () => {
                     width={203}
                     height={56}
                     className="w-[160px] lg:w-[204px]"
-                    src="/assets/footer-logo.svg"
+                    src="/footer-logo.svg"
                     alt="logo"
                   />
                 </Link>
@@ -29,7 +29,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="w-full md:w-6/12 lg:w-5/12">
-              <div className="flex justify-between flex-wrap gap-5  sm:gap-0">
+              <div className="flex justify-between flex-wrap gap-5 sm:gap-0">
                 <ul>
                   <li className="text-sm md:text-base font-semibold  text-white  transition-all ease-in-out duration-300">
                     Coffees
@@ -102,7 +102,7 @@ const Footer = () => {
                   </li>
                   <li className="pt-4">
                     <Link
-                      translate="_blank"
+                      target="_blank"
                       href="tel:+19992454563"
                       className="flex gap-2 lg:gap-3 xl:gap-4 hover:opacity-75 transition-all ease-in-out duration-300 items-center text-xs md:text-sm font-normal  text-white  "
                     >
@@ -112,7 +112,6 @@ const Footer = () => {
                   </li>
                   <li className="pt-5">
                     <Link
-                      translate="_blank"
                       href="mailto:contact@CoffeeBean.com"
                       className="flex gap-2 lg:gap-3 xl:gap-4 items-center text-xs md:text-sm hover:opacity-75 transition-all ease-in-out duration-300 font-normal text-white  "
                     >
@@ -122,7 +121,7 @@ const Footer = () => {
                   </li>
                   <li className="pt-5">
                     <Link
-                      translate="_blank"
+                      target="_blank"
                       href="#location"
                       className="flex gap-2 lg:gap-3 xl:gap-4 items-center text-xs md:text-sm font-normal hover:opacity-75 transition-all ease-in-out duration-300 text-white  "
                     >
@@ -136,7 +135,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#141414] py-4 md:rounded-[0px_0px_32px_32px]">
+      <div className="bg-[#141414] py-4 rounded-[0px_0px_32px_32px] max-w-[1360px] mx-auto px-3">
         <p className="text-center text-white text-xs md:text-sm font-normal">
           Coffee Bean - Copyright © {currentYear}. All rights reserved.
         </p>
