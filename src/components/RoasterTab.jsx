@@ -17,12 +17,14 @@ const RoasterTab = () => {
             />
           </div>
           <div className="md:w-8/12">
-            <h2 className="mb-4 text-2xl font-semibold leading-[36px]">
+            <h2 className="mb-4 text-2xl font-semibold leading-[36px] text-[#000d07]">
               Sweet Coffee USA, Authorized Distributor
             </h2>
-            <p className="mb-6 font-normal text-sm leading-[21px]">
-              <span className="font-medium">Coffee Machine Depot USA</span> is
-              proud to present the Gemma Countertop Coffee Roaster by Sweet
+            <p className="sm:mb-6 mb-4 font-normal text-sm leading-[21px] text-[#090909]">
+              <span className="font-medium text-black">
+                Coffee Machine Depot USA
+              </span>{" "}
+              is proud to present the Gemma Countertop Coffee Roaster by Sweet
               Coffee USA. Gemma is an electric, fully automatic coffee roaster
               which doesn’t require knowledge in roasting coffee. The main
               control panel allows selecting up to 10 different preset
@@ -33,12 +35,12 @@ const RoasterTab = () => {
             <h4 className="text-sm font-semibold leading-[21px] mb-4">
               Key Features
             </h4>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col sm:gap-3 gap-2">
               {RoasterKeyFeatures.map((features, index) => {
                 return (
                   <div key={index.id} className="flex items-center gap-2">
                     <span>{features.checkIcon}</span>
-                    <p className="text-sm font-normal leading-[19.6px]">
+                    <p className="text-sm font-normal leading-[19.6px] text-[#000d07]">
                       {features.feature}
                     </p>
                   </div>
