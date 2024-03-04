@@ -98,6 +98,7 @@ export const ServiceData = [
 export const BlogData = [
   {
     image: "/assets/images/webp/blog_img_1.webp",
+    badge:"Bean",
     blogDate: "September 18, 20230",
     title: "How To Make Pour Over Coffee",
     description:
@@ -105,6 +106,7 @@ export const BlogData = [
   },
   {
     image: "/assets/images/webp/blog_img_2.webp",
+    badge: "Bean",
     blogDate: "September 18, 20230",
     title: "How to Make French Press Coffee",
     description:
@@ -112,6 +114,7 @@ export const BlogData = [
   },
   {
     image: "/assets/images/webp/blog_img_3.webp",
+    badge: "Bean",
     blogDate: "September 18, 20230",
     title: "How to Make French Press Coffee",
     description:
@@ -120,6 +123,7 @@ export const BlogData = [
   {
     blogclass: "md:hidden",
     image: "/assets/images/webp/blog_img_main.webp",
+    badge: "Coffee",
     blogDate: "September 18, 20230",
     title: "How To Make Chemex Coffee",
     description:
