@@ -4,6 +4,7 @@ import TabsComponents from "@/components/TabsComponents";
 import RoasterTab from "@/components/RoasterTab";
 import CoffeeGrid from "@/components/CoffeeGrid";
 import Slider from "@/components/Slider";
+import Footer from "@/components/Footer";
 import Services from "@/components/Service";
 import Blog from "@/components/Blog";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <RoasterTab />
       <CoffeeGrid />
       <Slider />
+      <Footer/>
     </>
   );
 }
