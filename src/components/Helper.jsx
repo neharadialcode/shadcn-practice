@@ -59,25 +59,25 @@ export const RoasterKeyFeatures = [
 ];
 export const sliderCard = [
   {
-    image: "",
-    title: "1 Coffee Bean by Malerapaso",
+    image: "/assets/images/webp/slider_image_first.webp",
+    title: "Coffee Bean by Malerapaso",
     description:
       "Plantilla de informe de resonancia magnética (RM) de articulación de Plantilla de informe de resonancia magnética (RM) de articulación de Plantilla de informe de resonancia magnética (RM) de articulación de",
   },
   {
-    image: "",
-    title: "2 Coffee Bean by Malerapaso",
+    image: "/assets/images/webp/slider_image_second.webp",
+    title: "Coffee Bean by Malerapaso",
     description:
       "Plantilla de informe de resonancia magnética (RM) de articulación de Plantilla de informe de resonancia magnética (RM) de articulación de Plantilla de informe de resonancia magnética (RM) de articulación de",
   },
   {
-    image: "",
-    title: "3 Coffee Bean by Malerapaso",
+    image: "/assets/images/webp/slider_image_third.webp",
+    title: "Coffee Bean by Malerapaso",
     description:
       "Plantilla de informe de resonancia magnética (RM) de articulación de Plantilla de informe de resonancia magnética (RM) de articulación de Plantilla de informe de resonancia magnética (RM) de articulación de",
   },
   {
-    image: "",
+    image: "/assets/images/webp/slider_image_first.webp",
     title: "Coffee Bean by Malerapaso",
     description:
       "Plantilla de informe de resonancia magnética (RM) de articulación de Plantilla de informe de resonancia magnética (RM) de articulación de Plantilla de informe de resonancia magnética (RM) de articulación de",
