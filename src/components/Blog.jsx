@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import { BlogData } from "./common/Helper";
-import { CalenderIcon } from "./common/Icons";
+import { BlogData } from "./Helper";
+import { CalenderIcon } from "./Icons";
 const Blog = () => {
   return (
     <div className="container custom_container mx-auto py-12 px-4 lg:px-3">
       <h2 className="text-center font-medium sm:text-3xl text-3xl md:text-4xxl text-DarkBlack mb-5 sm:mb-8 lg:mb-12">
-        Latest <span className="font-extrabold text-lightOrange">Blog </span>
+        Latest <span className="font-extrabold text-[#d3756b]">Blog </span>
         posts
       </h2>
       <div className="flex flex-wrap items-center justify-center">

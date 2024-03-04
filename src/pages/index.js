@@ -5,12 +5,14 @@ import RoasterTab from "@/components/RoasterTab";
 import CoffeeGrid from "@/components/CoffeeGrid";
 import Slider from "@/components/Slider";
 import Services from "@/components/Service";
+import Blog from "@/components/Blog";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
+      <Blog />
       <Services />
       <TabsComponents />
       <RoasterTab />
