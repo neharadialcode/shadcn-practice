@@ -30,3 +30,36 @@ export const StarsIcon = () => (
     />
   </svg>
 );
+
+export const CheckMark = () => (
+  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_6006_137)">
+      <rect width="12" height="12" rx="6" fill="#D3756B" />
+      <g clip-path="url(#clip1_6006_137)">
+        <path d="M9.27539 3.84521L4.97852 8.14209L3.02539 6.18896" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+    </g>
+    <defs>
+      <clipPath id="clip0_6006_137">
+        <rect width="12" height="12" fill="white" />
+      </clipPath>
+      <clipPath id="clip1_6006_137">
+        <rect width="7.5" height="7.5" fill="white" transform="translate(2.40039 2.3999)" />
+      </clipPath>
+    </defs>
+  </svg>
+
+);
+// NEXT ARROW
+export const NextArrow = () => (
+  <svg width="24" height="44" viewBox="0 0 24 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2 2L22 22L2 42" stroke="#090909" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+);
+// Prev ARROW
+export const PrevArrow = () => (
+  <svg width="24" height="44" viewBox="0 0 24 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M22 2L2 22L22 42" stroke="#090909" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+
+);
