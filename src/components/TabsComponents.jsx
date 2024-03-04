@@ -22,63 +22,25 @@ const TabsComponents = () => {
       <TabsContent value="account">
         <div className="bg-red-400 w-full flex gap-6">
           <div className="flex flex-col gap-6">
-            <TabsCard />
-            <Card>
-              <CardHeader>
-                <CardTitle>Account</CardTitle>
-                <CardDescription>
-                  Make changes to your account here. Click save when you're
-                  done.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
-                iusto consequatur amet quos nisi veritatis eligendi maxime quia
-                distinctio soluta voluptate qui assumenda eaque quasi quod
-                deserunt, repellat sed ipsum?
-              </CardContent>
-              <CardFooter>
-                <Button>Save changes</Button>
-              </CardFooter>
-            </Card>
+            <TabsCard
+              name="Arlene McCoy"
+              desc={`Keep the soil evenly moist for the healthiest growth. If the sun gets too hot, Chinese cabbage tends to "bolt" or go to seed; in long periods of heat, some kind of shade may be helpful. Watch out for snails, as they will harm the plants.`}
+            />
+            <TabsCard
+              name="Ralph Edwards"
+              desc={` Vivamus eget euismod magna. Nam sed lacinia nibh, et lacinia lacus.`}
+            />
           </div>
           <div className="flex flex-col gap-6">
-            <Card>
-              <CardHeader>
-                <CardTitle>Account</CardTitle>
-                <CardDescription>
-                  Make changes to your account here. Click save when you're
-                  done.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
-                iusto consequatur amet quos nisi veritatis eligendi maxime quia
-                distinctio soluta voluptate qui assumenda eaque quasi quod
-                deserunt, repellat sed ipsum?
-              </CardContent>
-              <CardFooter>
-                <Button>Save changes</Button>
-              </CardFooter>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Account</CardTitle>
-                <CardDescription>
-                  Make changes to your account here. Click save when you're
-                  done.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
-                iusto consequatur amet quos nisi veritatis eligendi maxime quia
-                distinctio soluta voluptate qui assumenda eaque quasi quod
-                deserunt, repellat sed ipsum?
-              </CardContent>
-              <CardFooter>
-                <Button>Save changes</Button>
-              </CardFooter>
-            </Card>
+            <TabsCard
+              name="Darrell Steward"
+              desc="Duis at ullamcorper nulla, eu dictum eros."
+            />
+            <TabsCard
+              name=""
+              desc={`200+ Canton Pak Choi Bok Choy Chinese Cabbage Seeds Heirloom Non-GMO Productive Brassica rapa VAR. chinensis, a.k.a. Canton's Choice, Bok Choi, from USA
+`}
+            />
           </div>
         </div>
       </TabsContent>
