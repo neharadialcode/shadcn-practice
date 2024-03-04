@@ -78,13 +78,13 @@ export const NextArrow = () => (
     <path
       d="M2 2L22 22L2 42"
       stroke="#090909"
-      stroke-width="2.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );
-// Prev ARROW
+// PREV ARROW
 export const PrevArrow = () => (
   <svg
     width="24"
@@ -96,9 +96,9 @@ export const PrevArrow = () => (
     <path
       d="M22 2L2 22L22 42"
       stroke="#090909"
-      stroke-width="2.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );
