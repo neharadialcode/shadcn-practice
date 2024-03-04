@@ -20,24 +20,24 @@ const TabsComponents = () => {
         <TabsTrigger value="password">Comments (24)</TabsTrigger>
       </TabsList>
       <TabsContent value="account">
-        <div className="bg-red-400 w-full flex gap-6">
-          <div className="flex flex-col gap-6">
+        <div className="w-full md:flex gap-6">
+          <div className="flex flex-col gap-6 w-full">
             <TabsCard
               name="Arlene McCoy"
               desc={`Keep the soil evenly moist for the healthiest growth. If the sun gets too hot, Chinese cabbage tends to "bolt" or go to seed; in long periods of heat, some kind of shade may be helpful. Watch out for snails, as they will harm the plants.`}
             />
             <TabsCard
-              name="Ralph Edwards"
-              desc={` Vivamus eget euismod magna. Nam sed lacinia nibh, et lacinia lacus.`}
-            />
-          </div>
-          <div className="flex flex-col gap-6">
-            <TabsCard
               name="Darrell Steward"
               desc="Duis at ullamcorper nulla, eu dictum eros."
             />
+          </div>
+          <div className="flex flex-col gap-6 w-full pt-6 md:pt-0">
             <TabsCard
-              name=""
+              name="Ralph Edwards"
+              desc={` Vivamus eget euismod magna. Nam sed lacinia nibh, et lacinia lacus.`}
+            />
+            <TabsCard
+              name="Albert Flores"
               desc={`200+ Canton Pak Choi Bok Choy Chinese Cabbage Seeds Heirloom Non-GMO Productive Brassica rapa VAR. chinensis, a.k.a. Canton's Choice, Bok Choi, from USA
 `}
             />
