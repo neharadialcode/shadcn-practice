@@ -23,7 +23,7 @@ export default function Home() {
       <CoffeeGrid />
       <Slider />
       <Footer />
-      {/* <CoffeeBean /> */}
+      <CoffeeBean />
     </>
   );
 }
