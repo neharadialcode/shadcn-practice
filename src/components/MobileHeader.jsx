@@ -1,43 +1,9 @@
-// import React from 'react'
-// import { CrossIcon, SignUpPeople } from './Icons'
-// import Link from 'next/link'
-// import {
-//     NavigationMenu,
-//     NavigationMenuContent,
-//     NavigationMenuItem,
-//     NavigationMenuLink,
-//     NavigationMenuList,
-//     NavigationMenuTrigger,
-//     navigationMenuTriggerStyle,
-// } from "@/components/ui/navigation-menu"
-// import Signup from './Signup'
 
-// const MobileHeader = ({ setNavigationOpen }) => {
-//     return (
-//         <>
-//             <div onClick={() => setNavigationOpen(false)} className="absolute top-5 end-5 cursor-pointer">
-//                 <CrossIcon />
-//             </div>
-//             <div className='flex flex-col justify-center items-center h-full gap-5'>
-//                 <Link href="/" className='text-base text-white hover:opacity-80 duration-300'>Newly added</Link>
-//                 <Link href="/" className='text-base text-white hover:opacity-80 duration-300'>Newsroom</Link>
-//                 <Link href="/" className='text-base text-white hover:opacity-80 duration-300'>Sign in</Link>
-//                 <Signup />
-//             </div>
-//         </>
-//     )
-// }
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
 import {
     Sheet,
-    SheetClose,
     SheetContent,
-    SheetDescription,
-    SheetFooter,
     SheetHeader,
-    SheetTitle,
     SheetTrigger,
 } from "@/components/ui/sheet"
 import { MenuIcon } from "./Icons"
