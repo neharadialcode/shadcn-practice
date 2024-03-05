@@ -14,14 +14,14 @@ import { SignUpPeople } from "./Icons"
 
 export function Signup() {
     return (
-        <Dialog>
+        <Dialog className="">
             <DialogTrigger asChild>
                 <Button variant="outline" className="text-base bg-white flex items-center border border-transparent hover:border-white hover:bg-transparent hover:opacity-80 hover:text-white group gap-2 duration-300 py-3 px-5 rounded-3xl">
                     <span>  <SignUpPeople /></span>
                     Sign up
                 </Button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-[425px]">
+            <DialogContent className="sm:max-w-[425px] px-3">
                 <DialogHeader>
                     <DialogTitle>Edit profile</DialogTitle>
                     <DialogDescription>
