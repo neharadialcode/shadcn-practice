@@ -102,7 +102,7 @@ import { Badge } from "./ui/badge";
 export function Blog() {
   return (
     <>
-      <div className="max-w-[1120px] mx-auto px-3 xl:px-0">
+      <div className="max-w-[1120px] mx-auto px-3 xl:px-0 py-12 sm:py-16 md:py-20">
         <h2 className="text-center font-medium sm:text-3xl text-3xl md:text-4xxl text-DarkBlack mb-5 sm:mb-8 lg:mb-12">
           Latest <span className="font-extrabold text-[#d3756b]">Blog </span>
           posts
@@ -137,7 +137,7 @@ export function Blog() {
           <div className="md:w-5/12 lg:w-6/12 xl:w-7/12 hidden xl:-ms-3 md:flex">
             <Card className="p-0 bg-white">
               <CardHeader className="relative w-full">
-                <Badge className="absolute py-2 px-4 text-xs left-2 top-2 font-semibold hover:bg-opacity-60 duration-300 hover:bg-white bg-white text-[#090909] uppercase">Coffee</Badge>
+                <Badge className="absolute py-2 px-4 text-xs left-4 top-4 font-semibold hover:bg-opacity-60 duration-300 hover:bg-white bg-white text-[#090909] uppercase">Coffee</Badge>
                 <Image className="w-full rounded-[20px] !m-0" height={315} width={640} src="/assets/images/webp/blog_img_main.webp" alt="images blog" />
               </CardHeader>
               <CardContent className="flex flex-col mt-4 p-0">
