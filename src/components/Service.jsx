@@ -44,10 +44,10 @@ import { ServiceData } from "./Helper";
 export function Services() {
   return (
     <div className="max-w-[1140px] mx-auto px-3 xl:px-0">
-      <div className="flex flex-wrap justify-center -mx-3 lg:-mx-5 py-12 sm:py-16 md:py-20">
+      <div className="flex flex-wrap justify-center -mx-3 xl:-mx-5 py-12 sm:py-16 md:py-20">
         {ServiceData.map((value, index) => {
           return (
-            <div className={`w-full sm:w-6/12 md:w-4/12 px-3 lg:px-5 ${value.cardPadding}`} key={index}>
+            <div className={`w-full sm:w-6/12 md:w-4/12 px-3 xl:px-5 ${value.cardPadding}`} key={index}>
               <Card className="p-0 bg-white">
                 <CardHeader>
                   <span className="mx-auto">{value.icon}</span>
