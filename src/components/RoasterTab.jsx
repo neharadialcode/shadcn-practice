@@ -4,7 +4,7 @@ import { roasterKeyFeatures } from "./Helper";
 
 const RoasterTab = () => {
   return (
-    <div className="bg-white pt-10 pb-20">
+    <div className="bg-white">
       <div className="max-w-[1120px] mx-auto xl:px-0 px-3">
         <div className="flex lg:gap-10 gap-6 md:flex-row flex-col">
           <div className="md:w-4/12 flex justify-center md:block">
