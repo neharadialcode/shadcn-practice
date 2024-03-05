@@ -8,13 +8,15 @@ import Services from "@/components/Service";
 import Blog from "@/components/Blog";
 import Header from "@/components/Header";
 import CoffeeBean from "@/components/CoffeeBean";
+import NewCoffeeBeanSlider from "@/components/NewCoffeeBeanSlider";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
+      <NewCoffeeBeanSlider />
       <Blog />
       <Services />
       <TabsComponents />

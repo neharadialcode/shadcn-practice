@@ -5,7 +5,7 @@ import { BlackSearch, CategoryIcon, } from './Icons'
 const Hero = () => {
     return (
         <>
-            <div className="max-w-[1120px] mx-auto px-3 xl:px-0 pt-16">
+            <div className="max-w-[1120px] mx-auto px-3 xl:px-0 py-12 md:py-16">
                 <h1 className='text-3xl sm:text-4xl md:text-5xl font-normal capitalize text-center text-[#090909] !leading-[120%]'>
                     Unveiling the {" "}
                     <span className='font-extrabold sm:block'>world of

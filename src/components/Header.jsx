@@ -13,7 +13,7 @@ const Header = () => {
     const [navigationOpen, setNavigationOpen] = useState(false);
     return (
         <>
-            <div className="max-w-[1900px] relative mx-auto">
+            <div className="max-w-[1920px] relative mx-auto">
                 <Image className='absolute z-[-1] hidden md:flex top-0 start-0' height={400} width={250} src="/assets/images/webp/header_top_start_img_bean.webp" alt='image' />
                 <Image className='absolute z-[-1] hidden md:flex bottom-0 end-0' height={400} width={250} src="/assets/images/webp/header_bottom_end_img_bean.webp" alt='image' />
                 <div className="max-w-[1120px] relative z-10 mx-auto px-3 xl:px-0">

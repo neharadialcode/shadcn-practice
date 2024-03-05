@@ -1,5 +1,6 @@
 import React from "react";
 import { CheckMark, Database, ProductData, SearchIcon } from "./Icons";
+import { ChocolateBadge, GreenBadge, OrangeBadge, RedeBadge } from "./AllBadges";
 
 export const roasterKeyFeatures = [
   {
@@ -73,6 +74,7 @@ export const sliderCard = [
       "Plantilla de informe de resonancia magnética (RM) de articulación de Plantilla de informe de resonancia magnética (RM) de articulación de Plantilla de informe de resonancia magnética (RM) de articulación de",
   },
 ];
+
 export const ServiceData = [
   {
     icon: <SearchIcon />,
@@ -98,7 +100,7 @@ export const ServiceData = [
 export const BlogData = [
   {
     image: "/assets/images/webp/blog_img_1.webp",
-    badge:"Bean",
+    badge: "Bean",
     blogDate: "September 18, 20230",
     title: "How To Make Pour Over Coffee",
     description:
@@ -128,5 +130,61 @@ export const BlogData = [
     title: "How To Make Chemex Coffee",
     description:
       "Pour over coffee sounds complicated, but this coffee brewing process is surprisingly simple and the results can be amazing with just a little practice. If...",
+  },
+];
+export const newSliderCard = [
+  {
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    badgeFirst: <ChocolateBadge name={"Chocolate"} />,
+    badgeSecond: <GreenBadge name={"Bean"} />,
+    badgeThird: <OrangeBadge name={"Honey"} />,
+    badgeFourth: <RedeBadge name={"caramel"} />,
+  },
+  {
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    badgeFirst: <ChocolateBadge name={"Chocolate"} />,
+    badgeSecond: <GreenBadge name={"Bean"} />,
+    badgeThird: <OrangeBadge name={"Honey"} />,
+    // badgeFourth: <RedeBadge name={"caramel"} />,
+  },
+  {
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    badgeFirst: <ChocolateBadge name={"Chocolate"} />,
+    badgeSecond: <RedeBadge name={"caramel"} />,
+    // badgeSecond: <GreenBadge name={"Bean"} />,
+    // badgeThird: <OrangeBadge name={"Honey"} />,
+  },
+  {
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    // badgeFirst: <ChocolateBadge name={"Chocolate"} />,
+    badgeFirst: <GreenBadge name={"Bean"} />,
+    badgeSecond: <OrangeBadge name={"Honey"} />,
+    badgeThird: <RedeBadge name={"caramel"} />,
+  },
+  {
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    // badgeFirst: <ChocolateBadge name={"Chocolate"} />,
+    badgeFirst: <GreenBadge name={"Bean"} />,
+    // badgeThird: <OrangeBadge name={"Honey"} />,
+    badgeSecond: <RedeBadge name={"caramel"} />,
+  },
+  {
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    badgeFirst: <ChocolateBadge name={"Chocolate"} />,
+    badgeSecond: <GreenBadge name={"Bean"} />,
+    badgeThird: <OrangeBadge name={"Honey"} />,
+    badgeFourth: <RedeBadge name={"caramel"} />,
   },
 ];
