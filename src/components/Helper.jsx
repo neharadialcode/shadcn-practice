@@ -98,7 +98,7 @@ export const ServiceData = [
 export const BlogData = [
   {
     image: "/assets/images/webp/blog_img_1.webp",
-    badge:"Bean",
+    badge: "Bean",
     blogDate: "September 18, 20230",
     title: "How To Make Pour Over Coffee",
     description:
@@ -128,5 +128,78 @@ export const BlogData = [
     title: "How To Make Chemex Coffee",
     description:
       "Pour over coffee sounds complicated, but this coffee brewing process is surprisingly simple and the results can be amazing with just a little practice. If...",
+  },
+];
+
+// ============== COFFEE BEAN =========
+export const CoffeeBeanDetails = [
+  {
+    tittle: "Altitude",
+    discription: "900-1000",
+  },
+  {
+    tittle: "Country",
+    discription: "Mexico",
+  },
+  {
+    tittle: "Process",
+    discription: "Fully washed",
+  },
+  {
+    tittle: "Plantation",
+    discription: "Manual",
+  },
+  {
+    tittle: "Weight",
+    discription: "50g",
+  },
+  {
+    tittle: "Type",
+    discription: "Rubusta",
+  },
+  {
+    tittle: "Bean sort",
+    discription: "5",
+  },
+  {
+    tittle: "Roast level",
+    discription: "12",
+  },
+  {
+    tittle: "Season",
+    discription: "Fall",
+  },
+  {
+    tittle: "Roaster location",
+    discription: "South America",
+  },
+];
+
+export const QualityData = [
+  {
+    title: "Acidity",
+    value: 10,
+  },
+  {
+    title: "Body",
+    value: 45,
+  },
+  {
+    title: "Sweetness",
+    value: 25,
+  },
+  {
+    title: "Bitterness/",
+    span:"Aroma",
+    value: 5,
+    
+  },
+  {
+    title: "Aftertaste",
+    value: 15,
+  },
+  {
+    title: "Balance",
+    value: 80,
   },
 ];
