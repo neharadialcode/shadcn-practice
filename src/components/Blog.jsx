@@ -114,7 +114,7 @@ export function Blog() {
                 <>
                   <Card className={`flex flex-col sm:flex-row items-center p-0 gap-3 sm:gap-6 md:gap-3 lg:gap-6 bg-white ${value.blogclass}`}>
                     <CardHeader className="relative m-0 md:min-w-[150px] min-w-[120px] sm:min-w-[170px] lg:min-w-[170px]">
-                      <Badge className="absolute py-2 px-4 text-xs left-2 top-2 font-semibold hover:bg-opacity-60 duration-300 hover:bg-white bg-white text-[#090909] uppercase">{value.badge}</Badge>
+                      <Badge className="absolute py-2 px-4 text-xs left-2 top-2 font-semibold hover:bg-opacity-90 duration-300 hover:bg-white bg-white text-[#090909] uppercase">{value.badge}</Badge>
                       <Image className="w-[170px] rounded-[20px] !m-0 h-[134px]" height={134} width={170} src={value.image} alt="images blog" />
                     </CardHeader>
                     <CardContent className="flex flex-col p-0">
@@ -137,7 +137,7 @@ export function Blog() {
           <div className="md:w-5/12 lg:w-6/12 xl:w-7/12 hidden xl:-ms-3 md:flex">
             <Card className="p-0 bg-white">
               <CardHeader className="relative w-full">
-                <Badge className="absolute py-2 px-4 text-xs left-4 top-4 font-semibold hover:bg-opacity-60 duration-300 hover:bg-white bg-white text-[#090909] uppercase">Coffee</Badge>
+                <Badge className="absolute py-2 px-4 text-xs left-4 top-4 font-semibold hover:bg-opacity-90 duration-300 hover:bg-white bg-white text-[#090909] uppercase">Coffee</Badge>
                 <Image className="w-full rounded-[20px] !m-0" height={315} width={640} src="/assets/images/webp/blog_img_main.webp" alt="images blog" />
               </CardHeader>
               <CardContent className="flex flex-col mt-4 p-0">

@@ -187,4 +187,13 @@ export const newSliderCard = [
     badgeThird: <OrangeBadge name={"Honey"} />,
     badgeFourth: <RedeBadge name={"caramel"} />,
   },
+  {
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    // : <ChocolateBadge name={"Chocolate"} />,
+    badgeFirst: <GreenBadge name={"Bean"} />,
+    badgeThird: <OrangeBadge name={"Honey"} />,
+    badgeFourth: <RedeBadge name={"caramel"} />,
+  },
 ];

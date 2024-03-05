@@ -14,7 +14,7 @@ const AllSelect = (props) => {
     return (
         <>
             <Select className="p-0 border-none focus:border-none">
-                <SelectTrigger className={`p-0 bg-transparent group text-white hover:text-blue-600 duration-300 border-none outline-none focus:outline-none ${props.className}`}>
+                <SelectTrigger className={`p-0 bg-transparent group text-white hover:text-opacity-80 duration-300 border-none outline-none focus:outline-none ${props.className}`}>
                     <div className={`hidden ${props.className}`}>
                         <CategoryIcon />
                     </div>
