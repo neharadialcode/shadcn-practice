@@ -24,8 +24,8 @@ const CoffeeBean = () => {
   return (
     <div className="py-10">
       <div className="max-w-[1120px] mx-auto xl:px-0 px-3 flex min-[950px]:flex-row flex-col min-[950px]:gap-10 gap-6">
-        <div className="min-[950px]:max-w-[320px] w-full flex min-[950px]:flex-col gap-5 sm:flex-row flex-col">
-          <div className="min-[950px]:mb-8 mb-6 flex sm:justify-normal justify-center">
+        <div className="min-[950px]:max-w-[320px] w-full flex min-[950px]:flex-col gap-5 min-[950px]:gap-0 sm:flex-row flex-col">
+          <div className="min-[950px]:mb-8 flex sm:justify-normal justify-center">
             <Image
               src="/assets/images/png/coffee_bean.png"
               alt="coffee_bean"
@@ -116,13 +116,13 @@ const CoffeeBean = () => {
               </div>
             </div>
           </CardHeader>
-          <CardContent>
+          <CardContent className="p-0">
             <div className="bg-[#f9fafa] p-6 rounded-[20px] mb-6">
               <p className="font-normal text-base text-[#090909]">
                 Class aptent taciti sociosqu ad litora torquent per conubia
                 nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel
                 consequat nec, ultrices et ipsum. Nulla varius magna a consequat
-                pulvinar.{" "}
+                pulvinar.
               </p>
             </div>
             <div className="flex items-center gap-2 mb-6">

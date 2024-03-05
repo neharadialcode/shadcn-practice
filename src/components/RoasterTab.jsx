@@ -9,6 +9,7 @@ const RoasterTab = () => {
         <div className="flex lg:gap-10 gap-6 md:flex-row flex-col">
           <div className="md:w-4/12 flex justify-center md:block">
             <Image
+              className="ms-auto"
               src="/assets/images/png/roaster_machine.png"
               height={320}
               width={320}
