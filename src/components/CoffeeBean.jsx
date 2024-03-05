@@ -17,13 +17,13 @@ import {
   OrangeBadge,
   RedeBadge,
 } from "./AllBadges";
-import { CoffeeBeanDetails, QualityData } from "./Helper";
+import { coffeeBeanDetails, qualityData } from "./Helper";
 import { Progress } from "@/components/ui/progress";
 
 const CoffeeBean = () => {
   return (
     <div className="py-10">
-      <div className="max-w-[1120px] mx-auto xl:px-0 px-3 flex min-[950px]:flex-row flex-col min-[950px]:gap-10 gap-6">
+      <div className="max-w-[1120px] mx-auto xl:px-0 px-3 flex min-[950px]:flex-row flex-col-reverse min-[950px]:gap-10 gap-6">
         <div className="min-[950px]:max-w-[320px] w-full flex min-[950px]:flex-col gap-5 min-[950px]:gap-0 sm:flex-row flex-col">
           <div className="min-[950px]:mb-8 flex sm:justify-normal justify-center">
             <Image
@@ -34,7 +34,7 @@ const CoffeeBean = () => {
             />
           </div>
           <div className="flex flex-col gap-5 w-full">
-            {QualityData.map((quality, index) => {
+            {qualityData.map((quality, index) => {
               return (
                 <div key={index} className="flex gap-6 items-center">
                   <p className="max-w-20 w-full font-normal text-base text-[#090909]">
@@ -117,7 +117,7 @@ const CoffeeBean = () => {
             </div>
           </CardHeader>
           <CardContent className="p-0">
-            <div className="bg-[#f9fafa] p-6 rounded-[20px] mb-6">
+            <div className="bg-[#f9fafa] sm:p-6 px-4 py-[10px] rounded-[20px] mb-6">
               <p className="font-normal text-base text-[#090909]">
                 Class aptent taciti sociosqu ad litora torquent per conubia
                 nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel
@@ -129,22 +129,23 @@ const CoffeeBean = () => {
               <p className="text-[32px] leading-[48px] font-medium text-[#090909]">
                 $231⁹⁹
               </p>
-              <p className="font-bold text-lg text-[#776B5D]">
+              <p className="text-lg text-[#dddad6]">
                 <del>
-                  $<span className="font-medium">350</span>
+                  <span className="font-bold">$</span>
+                  <span className="font-medium">350</span>
                   <span className="font-normal">⁹⁹</span>
                 </del>
               </p>
               <span>
                 <OrangeBadge
-                  className={"py-1 px-2 bg-[#fffbe6]"}
+                  className={"py-1 px-2 bg-[#fffbe6] text-[#ccbddd]"}
                   name={"%35 OFF"}
                 />
               </span>
             </div>
-            <div className="flex items-center gap-4 mb-10">
-              <Button className="bg-[#776B5D] h-full px-20 py-4 flex items-center text-white font-medium text-[20px] leading-[25px] rounded-[40px] w-full hover:opacity-80 hover:bg-[#776B5D] transition-all duration-300">
-                buy now
+            <div className="flex items-center gap-4 mb-10 justify-center">
+              <Button className="bg-[#776B5D] h-full sm:px-20 py-4 flex items-center text-white font-medium text-[20px] leading-[25px] rounded-[40px] min-[950px]:w-full sm:w-1/2 px-14  hover:opacity-80 hover:bg-[#776B5D] transition-all duration-300">
+                Buy Now
                 <span className="ms-2">
                   <ButtonArrow />
                 </span>
@@ -155,8 +156,8 @@ const CoffeeBean = () => {
             </div>
           </CardContent>
           <CardFooter>
-            <div className="grid sm:grid-cols-2 gap-3 w-full">
-              {CoffeeBeanDetails.map((details, index) => {
+            <div className="grid sm:grid-cols-2 sm:w-full min-[400px]:w-3/4 w-full mx-auto gap-3">
+              {coffeeBeanDetails.map((details, index) => {
                 return (
                   <div
                     key={index}

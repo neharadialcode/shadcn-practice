@@ -134,7 +134,7 @@ export const BlogData = [
 ];
 
 // ============== COFFEE BEAN =========
-export const CoffeeBeanDetails = [
+export const coffeeBeanDetails = [
   {
     tittle: "Altitude",
     discription: "900-1000",
@@ -177,7 +177,7 @@ export const CoffeeBeanDetails = [
   },
 ];
 
-export const QualityData = [
+export const qualityData = [
   {
     title: "Acidity",
     value: 10,
