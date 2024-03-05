@@ -14,7 +14,7 @@ import {
 const MobileHeader = ({ setNavigationOpen }) => {
     return (
         <>
-            <div onClick={() => setNavigationOpen(false)} className="absolute top-5 end-5">
+            <div onClick={() => setNavigationOpen(false)} className="absolute top-5 end-5 cursor-pointer">
                 <CrossIcon />
             </div>
             <div className='flex flex-col justify-center items-center h-full gap-5'>
