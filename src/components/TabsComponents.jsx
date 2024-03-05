@@ -11,6 +11,7 @@ import {
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import TabsCard from "./TabsCard";
+import RoasterTab from "./RoasterTab";
 
 const TabsComponents = () => {
   return (
@@ -24,7 +25,10 @@ const TabsComponents = () => {
             Comments (24)
           </TabsTrigger>
         </TabsList>
-        <TabsContent value="account">
+        <TabsContent className=" pt-10 lg:pb-20 pb-10" value="account">
+        <RoasterTab/>
+        </TabsContent>
+        <TabsContent className=" pt-10 lg:pb-20 pb-10"  value="password">
           <div className="w-full md:flex gap-6">
             <div className="flex flex-col gap-6 w-full">
               <TabsCard
@@ -48,25 +52,6 @@ const TabsComponents = () => {
               />
             </div>
           </div>
-        </TabsContent>
-        <TabsContent value="password">
-          <Card>
-            <CardHeader>
-              <CardTitle>Password</CardTitle>
-              <CardDescription>
-                Change your password here. After saving, you'll be logged out.
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod rem
-              non harum illo doloribus libero alias atque eum reprehenderit
-              veniam quidem laboriosam quisquam voluptas est nostrum reiciendis
-              fugit, perferendis a?
-            </CardContent>
-            <CardFooter>
-              <Button>Save password</Button>
-            </CardFooter>
-          </Card>
         </TabsContent>
       </Tabs>
     </div>
