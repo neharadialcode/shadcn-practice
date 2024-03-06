@@ -5,18 +5,18 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 export const RadioInputs = (props) => {
     return (
         <>
-            <RadioGroup defaultValue="comfortable">
+            <RadioGroup defaultValue="comfortable" className="gap-0">
                 <div className="flex items-center space-x-2">
                     <RadioGroupItem value="default" id="r1" />
-                    <Label htmlFor="r1">{props.firstName}</Label>
+                    <Label className="text-base text-[#090909] font-normal" htmlFor="r1">{props.firstName}</Label>
                 </div>
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center space-x-2 pt-4">
                     <RadioGroupItem value="comfortable" id="r2" />
-                    <Label htmlFor="r2">{props.secondName}</Label>
+                    <Label className="text-base text-[#090909] font-normal" htmlFor="r2">{props.secondName}</Label>
                 </div>
-                <div className={`flex items-center space-x-2 ${props.className}`}>
+                <div className={`flex items-center space-x-2 pt-4 ${props.className}`}>
                     <RadioGroupItem value="compact" id="r3" />
-                    <Label htmlFor="r3">{props.thirdName}</Label>
+                    <Label className="text-base text-[#090909] font-normal" htmlFor="r3">{props.thirdName}</Label>
                 </div>
             </RadioGroup>
         </>
