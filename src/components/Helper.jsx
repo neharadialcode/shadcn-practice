@@ -75,7 +75,7 @@ export const sliderCard = [
   },
 ];
 
-export const ServiceData = [
+export const serviceData = [
   {
     icon: <SearchIcon />,
     title: "Advanced Search Functionality",
@@ -97,7 +97,7 @@ export const ServiceData = [
       "We understand the importance of quality when it comes to coffee beans. We are committed to ensuring that the coffee bean varieties featured on our platform meet the highest standards of excellence and authenticity.",
   },
 ];
-export const BlogData = [
+export const blogData = [
   {
     image: "/assets/images/webp/blog_img_1.webp",
     badge: "Bean",
