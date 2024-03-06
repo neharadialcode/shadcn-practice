@@ -42,8 +42,8 @@ const BeanCategory = () => {
               return (
                 <AccordionItem
                   key={index}
-                  value={index}
-                  defaultOpen={index === 0}
+                  value={category.id}
+                  defaultOpen={index === 1}
                   className="mb-8  border-b-0"
                 >
                   <AccordionTrigger className="ps-6 pe-5 py-4 bg-[#f9fafa] rounded-2xl hover:no-underline font-medium text-lg text-[#090909]">
@@ -62,7 +62,7 @@ const BeanCategory = () => {
                         className="border-0 pb-4 px-4 border-b rounded-none focus-visible:outline-none focus-visible:ring-0"
                       />
                     </div>
-                    <div>{category.type}</div>
+                    <div className="px-4">{category.type}</div>
                   </AccordionContent>
                 </AccordionItem>
               );
