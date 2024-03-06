@@ -453,63 +453,53 @@ export const beanCategories = [
     id:1,
     heading: "Roast level",
     placeholder: "Search Roast level...",
-    // categories: ["Light", "Medium", "Dark"],
-    
-    fillType: <RadioInputs />
+    type: <RadioInputs firstName="Light" secondName="Medium" thirdName="Dark" />
   },
   {
     id:2,
     heading: "Coffee notes ",
     placeholder: "Search Coffee notes...",
-    // categories: ["Fruits", "Honey", "Nuts"],
-    
     type: <RadioInputs firstName="Fruits" secondName="Honey" thirdName="Nuts" />
   },
   {
     id:3,
     heading: "Bean sort",
     placeholder: "Search Bean sort...",
-    // categories: ["Arabica", "Robusta SL28"],
-  
+    type: <RadioInputs firstName="Arabica" secondName="Robusta SL28" className="hidden" />
   },
   {
     id:4,
     heading: "Bean origin ",
     placeholder: "Search Bean origin...",
-    // categories: ["Columbia", "Peru"],
-    
-    type: <CheckboxInputs firstName="Columbia" secondName="Peru" />
+    type: <CheckboxInputs firstName="Columbia" secondName="Peru" className="hidden"  />
   },
   {
     id:5,
     heading: "Altitude (m)",
     placeholder: "Search Roast level...",
-    // categories: ["Light", "Medium", "Dark"],
+    type:"a"
   },
   {
     id:6,
     heading: "Coffee type ",
     placeholder: "Search Coffee type...",
-    // categories: ["Whole bean", "Pre-grind", "Pod"],
-    
+    type: <RadioInputs firstName="Whole bean" secondName="Pre-grind" thirdName="Pod" />
   },
   {
     id:1,
     heading: "Roaster location ",
     placeholder: "Search Roaster location...",
-    // categories: ["Sweden", "France", "USA"],
-  
+    type: <RadioInputs firstName="Sweden" secondName="France" thirdName="USA" />
   },
   {
     id:7,
     heading: "Certifications ",
     placeholder: "Search Certifications...",
-    // categories: ["Rainforest", "fair trade"],
-  
+    type: <RadioInputs firstName="Rainforest" secondName="fair trade" className="hidden"  />
   },
   {
     id:8,
     heading: "Subscription ",
-    // categories: ["Yes", "No"],
+    type: <RadioInputs firstName="Yes" secondName="No" className="hidden"  />
   },
 ];
