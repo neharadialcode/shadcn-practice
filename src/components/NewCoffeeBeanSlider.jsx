@@ -35,6 +35,13 @@ const NewCoffeeBeanSlider = () => {
             api.off("select", handleSelect);
         };
     }, [api]);
+
+    const handleIndicatorClick = (index) => {
+        setCurrent(index + 1); // Index is zero-based, so we add 1 to match the slide number
+        if (api && typeof api.scrollTo === "function") {
+            api.scrollTo(index); // Assuming the API provides a method to scroll to a specific slide
+        }
+    };
     return (
         <>
             <div className=" overflow-hidden py-12">
@@ -72,7 +79,7 @@ const NewCoffeeBeanSlider = () => {
                                                 </div>
                                                 <p className="flex items-center text-[#090909] font-semibold text-xl ">
                                                     $80
-                                                    <span className="text-sm font-normal ms-[2px] text-[#c1c1c1] relative before:absolute before:w-full before:h-[1px] before:bg-[#c1c1c1] before:start-0 before:top-1/2 before:-translate-y-1/2"> $55.99</span>
+                                                    <span className="text-sm font-normal ms-1 text-[#c1c1c1] relative before:absolute before:w-full before:h-[1px] before:bg-[#c1c1c1] before:start-0 before:top-1/2 before:-translate-y-1/2"> $55.99</span>
                                                 </p>
                                             </div>
 
@@ -83,15 +90,16 @@ const NewCoffeeBeanSlider = () => {
                             </>
                             ))}
                         </CarouselContent>
-                        <CarouselPrevious className={"w-12 h-12 rounded-full !border !border-black hover:!border-opacity-100 !border-opacity-10 !pe-[18.5px] !ps-4"} />
-                        <CarouselNext className={"w-12 h-12 rounded-full !border !border-black hover:!border-opacity-100 !border-opacity-10 !ps-[18.5px] !pe-4 "} />
+                        <CarouselPrevious className={"h-8 w-8 md:h-12 md:w-12 rounded-full !border !border-black hover:!border-opacity-100 !border-opacity-10 px-3 md:!pe-[18.5px] md:!ps-4"} />
+                        <CarouselNext className={"h-8 w-8 md:h-12 md:w-12 rounded-full !border !border-black hover:!border-opacity-100 !border-opacity-10 px-3 md:!ps-[18.5px] md:!pe-4 "} />
                     </Carousel>
-                    <div className="pt-12 text-center text-sm text-muted-foreground">
-                        Slide {current} of {count}
+                    <div className="pt-8 sm:pt-10 md:pt-12 text-center text-sm text-muted-foreground">
+
                         <div className=" flex justify-center gap-1">
                             {Array.from({ length: count }, (_, i) => (
                                 <span
                                     key={i}
+                                    onClick={() => handleIndicatorClick(i)}
                                     className={`w-4 h-1 cursor-pointer rounded-2xl bg-[#090909] bg-opacity-15 ${current === i + 1 ? "!bg-[#776b5d]" : ""
                                         }`}
                                 ></span>

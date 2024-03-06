@@ -16,12 +16,12 @@ const Hero = () => {
                 <p className="text-center !leading-[180%] text-sm font-light max-w-[592px] mx-auto text-[#090909] pt-6">
                     We seek to establish a comprehensive online platform dedicated to celebrating the diversity of coffee beans sourced from local roasters worldwide.
                 </p>
-                <div className='mt-6 max-w-[720px] mx-auto px-4 sm:px-6 md:px-8 py-[18px]'>
-                    <div className="flex items-center">
-                        <div className="border-e  sm:pe-4">
+                <div className='sm:mt-6 max-w-[580px] lg:max-w-[720px] mx-auto px-4 sm:px-6 md:px-8 py-[18px]'>
+                    <div className="flex flex-col sm:flex-row items-center justify-center ">
+                        <div className="sm:border-e sm:pe-4 order-2 sm:order-1 pt-4 sm:pt-0">
                             <AllSelect className={"text-[#090909] !flex me-2"} />
                         </div>
-                        <div className="relative max-w-[600px] w-full  ms-3 sm:ms-6">
+                        <div className="relative max-w-[380px] xl:max-w-[600px] w-full order-1 sm:ms-6">
                             <div className="absolute end-0 top-1.5 z-0 cursor-pointer">
                                 <BlackSearch />
                             </div>
