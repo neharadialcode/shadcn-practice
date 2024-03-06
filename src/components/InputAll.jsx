@@ -2,6 +2,7 @@ import React from 'react'
 import { Label } from "@/components/ui/label"
 import { Checkbox } from "@/components/ui/checkbox"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import Image from 'next/image'
 export const RadioInputs = (props) => {
     return (
         <>
@@ -52,6 +53,14 @@ export const CheckboxInputs = (props) => {
                     {props.thirdName}
                 </label>
             </div>
+        </>
+    )
+}
+
+export const ImageInput = () => {
+    return (
+        <>
+            <Image className='max-w-[400px] w-full' src="/assets/images/png/range_slide.png" alt='range_slide' height={43} width={400}/>
         </>
     )
 }

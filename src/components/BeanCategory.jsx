@@ -43,7 +43,7 @@ const BeanCategory = () => {
                 <AccordionItem
                   key={index}
                   value={category.id}
-                  defaultOpen={index === 1}
+                  defaultOpen={category.id === 1}
                   className="mb-8  border-b-0"
                 >
                   <AccordionTrigger className="ps-6 pe-5 py-4 bg-[#f9fafa] rounded-2xl hover:no-underline font-medium text-lg text-[#090909]">

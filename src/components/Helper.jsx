@@ -6,7 +6,7 @@ import {
   OrangeBadge,
   RedeBadge,
 } from "./AllBadges";
-import { CheckboxInputs, RadioInputs } from "./InputAll";
+import { CheckboxInputs, ImageInput, RadioInputs } from "./InputAll";
 
 export const roasterKeyFeatures = [
   {
@@ -476,8 +476,7 @@ export const beanCategories = [
   {
     id:5,
     heading: "Altitude (m)",
-    placeholder: "Search Roast level...",
-    type:"a"
+    type:<ImageInput/>
   },
   {
     id:6,
