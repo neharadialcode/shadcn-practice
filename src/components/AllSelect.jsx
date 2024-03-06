@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/select"
 import { CategoryIcon } from './Icons'
 
-const AllSelect = (props) => {
+export const HeaderSelect = (props) => {
     return (
         <>
             <Select className="p-0 border-none focus:border-none ">
@@ -34,5 +34,3 @@ const AllSelect = (props) => {
         </>
     )
 }
-
-export default AllSelect

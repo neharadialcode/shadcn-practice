@@ -5,8 +5,8 @@ import { MainLogo } from './Icons'
 import Link from 'next/link'
 import MobileHeader from './MobileHeader'
 import Hero from './Hero'
-import AllSelect from './AllSelect'
 import Signup from './Signup'
+import { HeaderSelect } from './AllSelect'
 const Header = () => {
     return (
         <>
@@ -19,7 +19,7 @@ const Header = () => {
                             <Link href="/" className='text-base text-white hover:opacity-80 duration-300'>
                                 <MainLogo />
                             </Link>
-                            <AllSelect />
+                            <HeaderSelect />
                             <div className="hidden sm:flex gap-5 md:gap-10">
                                 <Link href="/" className='text-base text-white hover:opacity-80 duration-300'>Newly added</Link>
                                 <Link href="/" className='text-base text-white hover:opacity-80 duration-300'>Newsroom</Link>

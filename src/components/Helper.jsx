@@ -263,3 +263,15 @@ export const newSliderCard = [
     badgeFourth: <RedeBadge name={"caramel"} />,
   },
 ];
+export const beanProductList = [
+  {
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    badgeFirst: <ChocolateBadge name={"Chocolate"} />,
+    badgeSecond: <GreenBadge name={"Bean"} />,
+    badgeThird: <OrangeBadge name={"Honey"} />,
+    badgeFourth: <RedeBadge name={"caramel"} />,
+  },
+  
+];

@@ -1,6 +1,6 @@
 import React from 'react'
-import AllSelect from './AllSelect'
 import { BlackSearch, CategoryIcon, } from './Icons'
+import { HeaderSelect } from './AllSelect'
 
 const Hero = () => {
     return (
@@ -19,7 +19,7 @@ const Hero = () => {
                 <div className='sm:mt-6 max-w-[580px] lg:max-w-[720px] mx-auto px-4 sm:px-6 md:px-8 py-[18px]'>
                     <div className="flex flex-col sm:flex-row items-center justify-center ">
                         <div className="sm:border-e sm:pe-4 order-2 sm:order-1 pt-4 sm:pt-0">
-                            <AllSelect className={"text-[#090909] !flex me-2"} />
+                            <HeaderSelect className={"text-[#090909] !flex me-2"} />
                         </div>
                         <div className="relative max-w-[380px] xl:max-w-[600px] w-full order-1 sm:ms-6">
                             <div className="absolute end-0 top-1.5 z-0 cursor-pointer">

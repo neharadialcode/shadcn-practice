@@ -9,12 +9,14 @@ import Blog from "@/components/Blog";
 import Header from "@/components/Header";
 import CoffeeBean from "@/components/CoffeeBean";
 import NewCoffeeBeanSlider from "@/components/NewCoffeeBeanSlider";
+import CategoryProduct from "@/components/CategoryProduct";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
+      <CategoryProduct />
       <Header />
       <NewCoffeeBeanSlider />
       <Blog />
