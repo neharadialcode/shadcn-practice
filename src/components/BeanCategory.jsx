@@ -10,6 +10,7 @@ import {
 import { beanCategories } from "./Helper";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
+import { RadioGroup, RadioGroupItem } from "./ui/radio-group";
 
 const BeanCategory = () => {
   return (
@@ -43,12 +44,12 @@ const BeanCategory = () => {
                 defaultOpen={index === 1}
                 className="mb-8  border-b-0"
               >
-                <AccordionTrigger className="ps-6 pe-5 py-4 bg-[#f9fafa] rounded-2xl">
+                <AccordionTrigger className="ps-6 pe-5 py-4 bg-[#f9fafa] rounded-2xl hover:no-underline font-medium text-lg text-[#090909]">
                   {category.heading}
                 </AccordionTrigger>
                 <AccordionContent className="pt-5">
-                  <div className="relative">
-                    <Label htmlFor="icon" className="outline-none border-0">
+                  <div className="relative mb-[30px]">
+                    <Label htmlFor="icon">
                       <span className="opacity-40 absolute right-4 top-[50%] -translate-y-[50%]">
                         <BlackSearch />
                       </span>
@@ -56,34 +57,29 @@ const BeanCategory = () => {
                     <Input
                       id="icon"
                       placeholder={category.placeholder}
-                      className="border-0 outline-none pb-4 px-4 border-b rounded-none focus:outline-none"
+                      className="border-0 pb-4 px-4 border-b rounded-none focus-visible:outline-none focus-visible:ring-0"
                     />
                   </div>
+                  <RadioGroup defaultValue="">
+                    {category.categories.map((category, index) => {
+                        return (
+                        <div
+                          key={index}
+                          className="flex items-center gap-2 px-4"
+                        >
+                          <RadioGroupItem value={category} id={category} className="focus-visible:bg-[#D3756B]" />
+                          <Label className="cursor-pointer font-normal text-base text-[#090909]" htmlFor={category}>
+                            {category}
+                          </Label>
+                        </div>
+                      );
+                    })}
+                    </RadioGroup>
                 </AccordionContent>
               </AccordionItem>
             );
           })}
-          {/* <AccordionItem value="item-1" className="  mb-8  border-b-0">
-        <AccordionTrigger className="ps-6 pe-5 py-4 bg-[#f9fafa] rounded-2xl">
-          Is it accessible?
-        </AccordionTrigger>
-        <AccordionContent className="pt-5 px-4">
-          Yes. It adheres to the WAI-ARIA design pattern.
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value="item-2">
-        <AccordionTrigger>Is it styled?</AccordionTrigger>
-        <AccordionContent>
-          Yes. It comes with default styles that matches the other
-          components&apos; aesthetic.
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value="item-3">
-        <AccordionTrigger>Is it animated?</AccordionTrigger>
-        <AccordionContent>
-          Yes. It's animated by default, but you can disable it if you prefer.
-        </AccordionContent>
-      </AccordionItem> */}
+
         </Accordion>
       </div>
     </div>

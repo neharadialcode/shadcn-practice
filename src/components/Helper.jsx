@@ -269,14 +269,20 @@ export const newSliderCard = [
 ];
 export const beanProductList = [
   {
-    id:"1",
+    id: "1",
     image: "/assets/images/png/new_slider_bean.png",
     title: "Coffee Bean",
     description: "Malerapaso",
     badgeFirst: <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
-    badgeSecond: <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />,
-    badgeThird: <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
-    badgeFourth: <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />,
+    badgeSecond: (
+      <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />
+    ),
+    badgeThird: (
+      <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+    ),
+    badgeFourth: (
+      <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
+    ),
   },
   {
     id: "2",
@@ -284,9 +290,15 @@ export const beanProductList = [
     title: "Coffee Bean",
     description: "Malerapaso",
     badgeFirst: <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
-    badgeSecond: <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />,
-    badgeThird: <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
-    badgeFourth: <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />,
+    badgeSecond: (
+      <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />
+    ),
+    badgeThird: (
+      <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+    ),
+    badgeFourth: (
+      <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
+    ),
   },
   {
     id: "3",
@@ -294,9 +306,15 @@ export const beanProductList = [
     title: "Coffee Bean",
     description: "Malerapaso",
     badgeFirst: <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
-    badgeSecond: <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />,
-    badgeThird: <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
-    badgeFourth: <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />,
+    badgeSecond: (
+      <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />
+    ),
+    badgeThird: (
+      <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+    ),
+    badgeFourth: (
+      <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
+    ),
   },
   {
     id: "4",
@@ -304,9 +322,15 @@ export const beanProductList = [
     title: "Coffee Bean",
     description: "Malerapaso",
     badgeFirst: <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
-    badgeSecond: <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />,
-    badgeThird: <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
-    badgeFourth: <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />,
+    badgeSecond: (
+      <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />
+    ),
+    badgeThird: (
+      <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+    ),
+    badgeFourth: (
+      <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
+    ),
   },
   {
     id: "5",
@@ -314,9 +338,15 @@ export const beanProductList = [
     title: "Coffee Bean",
     description: "Malerapaso",
     badgeFirst: <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
-    badgeSecond: <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />,
-    badgeThird: <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
-    badgeFourth: <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />,
+    badgeSecond: (
+      <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />
+    ),
+    badgeThird: (
+      <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+    ),
+    badgeFourth: (
+      <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
+    ),
   },
   {
     id: "6",
@@ -324,9 +354,15 @@ export const beanProductList = [
     title: "Coffee Bean",
     description: "Malerapaso",
     badgeFirst: <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
-    badgeSecond: <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />,
-    badgeThird: <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
-    badgeFourth: <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />,
+    badgeSecond: (
+      <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />
+    ),
+    badgeThird: (
+      <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+    ),
+    badgeFourth: (
+      <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
+    ),
   },
   {
     id: "7",
@@ -334,9 +370,15 @@ export const beanProductList = [
     title: "Coffee Bean",
     description: "Malerapaso",
     badgeFirst: <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
-    badgeSecond: <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />,
-    badgeThird: <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
-    badgeFourth: <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />,
+    badgeSecond: (
+      <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />
+    ),
+    badgeThird: (
+      <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+    ),
+    badgeFourth: (
+      <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
+    ),
   },
   {
     id: "8",
@@ -344,9 +386,15 @@ export const beanProductList = [
     title: "Coffee Bean",
     description: "Malerapaso",
     badgeFirst: <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
-    badgeSecond: <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />,
-    badgeThird: <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
-    badgeFourth: <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />,
+    badgeSecond: (
+      <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />
+    ),
+    badgeThird: (
+      <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+    ),
+    badgeFourth: (
+      <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
+    ),
   },
   {
     id: "9",
@@ -354,9 +402,15 @@ export const beanProductList = [
     title: "Coffee Bean",
     description: "Malerapaso",
     badgeFirst: <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
-    badgeSecond: <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />,
-    badgeThird: <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
-    badgeFourth: <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />,
+    badgeSecond: (
+      <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />
+    ),
+    badgeThird: (
+      <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+    ),
+    badgeFourth: (
+      <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
+    ),
   },
   {
     id: "10",
@@ -364,9 +418,15 @@ export const beanProductList = [
     title: "Coffee Bean",
     description: "Malerapaso",
     badgeFirst: <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
-    badgeSecond: <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />,
-    badgeThird: <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
-    badgeFourth: <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />,
+    badgeSecond: (
+      <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />
+    ),
+    badgeThird: (
+      <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+    ),
+    badgeFourth: (
+      <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
+    ),
   },
   {
     id: "11",
@@ -374,11 +434,16 @@ export const beanProductList = [
     title: "Coffee Bean",
     description: "Malerapaso",
     badgeFirst: <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
-    badgeSecond: <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />,
-    badgeThird: <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
-    badgeFourth: <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />,
+    badgeSecond: (
+      <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />
+    ),
+    badgeThird: (
+      <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+    ),
+    badgeFourth: (
+      <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
+    ),
   },
-
 ];
 
 // ====== BEAN CATEGORY ===========
@@ -387,21 +452,25 @@ export const beanCategories = [
     heading: "Roast level",
     placeholder: "Search Roast level...",
     categories: ["Light", "Medium", "Dark"],
+    type: "radio",
   },
   {
     heading: "Coffee notes ",
     placeholder: "Search Coffee notes...",
     categories: ["Fruits", "Honey", "Nuts"],
+    type: "radio",
   },
   {
     heading: "Bean sort",
     placeholder: "Search Bean sort...",
     categories: ["Arabica", "Robusta SL28"],
+    type: "checkbox",
   },
   {
     heading: "Bean origin ",
     placeholder: "Search Bean origin...",
     categories: ["Columbia", "Peru"],
+    type: "radio",
   },
 
   {
@@ -413,19 +482,22 @@ export const beanCategories = [
     heading: "Coffee type ",
     placeholder: "Search Coffee type...",
     categories: ["Whole bean", "Pre-grind", "Pod"],
+    type: "radio",
   },
   {
     heading: "Roaster location ",
     placeholder: "Search Roaster location...",
     categories: ["Sweden", "France", "USA"],
+    type: "checkbox",
   },
   {
     heading: "Certifications ",
     placeholder: "Search Certifications...",
     categories: ["Rainforest", "fair trade"],
+    type: "checkbox",
   },
   {
-    heading: "Roast level",
+    heading: "Subscription ",
     categories: ["Yes", "No"],
   },
 ];
