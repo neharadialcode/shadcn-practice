@@ -24,11 +24,6 @@ import { beanProductList } from "./Helper"
 const CategoryProduct = () => {
     return (
         <>
-            <div className="max-w-[1120px] px-3 mx-auto xl:px-0">
-                <div className="flex flex-col sm:flex-row md:gap-4 lg:gap-10">
-                    <div className="md:max-w-[300px] lg:max-w-[400px] w-full">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius magni ullam, explicabo quas quia molestias repellendus voluptates, vero incidunt provident fugiat culpa itaque doloribus accusamus obcaecati voluptatem fugit consectetur fuga!</p>
-                    </div>
                     <div className="flex flex-col w-full gap-4">
                         {beanProductList.map((value, index) => {
                             return (
@@ -62,8 +57,6 @@ const CategoryProduct = () => {
                             )
                         })}
                     </div>
-                </div>
-            </div>
         </>
     )
 }

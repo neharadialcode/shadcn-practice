@@ -6,6 +6,7 @@ import {
   OrangeBadge,
   RedeBadge,
 } from "./AllBadges";
+import { CheckboxInputs, RadioInputs } from "./InputAll";
 
 export const roasterKeyFeatures = [
   {
@@ -449,55 +450,66 @@ export const beanProductList = [
 // ====== BEAN CATEGORY ===========
 export const beanCategories = [
   {
+    id:1,
     heading: "Roast level",
     placeholder: "Search Roast level...",
-    categories: ["Light", "Medium", "Dark"],
-    type: "radio",
+    // categories: ["Light", "Medium", "Dark"],
+    
+    fillType: <RadioInputs />
   },
   {
+    id:2,
     heading: "Coffee notes ",
     placeholder: "Search Coffee notes...",
-    categories: ["Fruits", "Honey", "Nuts"],
-    type: "radio",
+    // categories: ["Fruits", "Honey", "Nuts"],
+    
+    type: <RadioInputs firstName="Fruits" secondName="Honey" thirdName="Nuts" />
   },
   {
+    id:3,
     heading: "Bean sort",
     placeholder: "Search Bean sort...",
-    categories: ["Arabica", "Robusta SL28"],
-    type: "checkbox",
+    // categories: ["Arabica", "Robusta SL28"],
+  
   },
   {
+    id:4,
     heading: "Bean origin ",
     placeholder: "Search Bean origin...",
-    categories: ["Columbia", "Peru"],
-    type: "radio",
+    // categories: ["Columbia", "Peru"],
+    
+    type: <CheckboxInputs firstName="Columbia" secondName="Peru" />
   },
-
   {
+    id:5,
     heading: "Altitude (m)",
     placeholder: "Search Roast level...",
-    categories: ["Light", "Medium", "Dark"],
+    // categories: ["Light", "Medium", "Dark"],
   },
   {
+    id:6,
     heading: "Coffee type ",
     placeholder: "Search Coffee type...",
-    categories: ["Whole bean", "Pre-grind", "Pod"],
-    type: "radio",
+    // categories: ["Whole bean", "Pre-grind", "Pod"],
+    
   },
   {
+    id:1,
     heading: "Roaster location ",
     placeholder: "Search Roaster location...",
-    categories: ["Sweden", "France", "USA"],
-    type: "checkbox",
+    // categories: ["Sweden", "France", "USA"],
+  
   },
   {
+    id:7,
     heading: "Certifications ",
     placeholder: "Search Certifications...",
-    categories: ["Rainforest", "fair trade"],
-    type: "checkbox",
+    // categories: ["Rainforest", "fair trade"],
+  
   },
   {
+    id:8,
     heading: "Subscription ",
-    categories: ["Yes", "No"],
+    // categories: ["Yes", "No"],
   },
 ];
