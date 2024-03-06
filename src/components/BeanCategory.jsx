@@ -50,7 +50,7 @@ const BeanCategory = () => {
                     {category.heading}
                   </AccordionTrigger>
                   <AccordionContent className="pt-5">
-                    <div className="relative mb-[30px]">
+                    <div className={`relative mb-[30px] ${category.classHidden}`}>
                       <Label htmlFor="icon">
                         <span className="opacity-40 absolute right-4 top-[50%] -translate-y-[50%]">
                           <BlackSearch />

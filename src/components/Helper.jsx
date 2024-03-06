@@ -450,55 +450,91 @@ export const beanProductList = [
 // ====== BEAN CATEGORY ===========
 export const beanCategories = [
   {
-    id:1,
+    id: 1,
     heading: "Roast level",
     placeholder: "Search Roast level...",
-    type: <RadioInputs firstName="Light" secondName="Medium" thirdName="Dark" />
+    type: (
+      <RadioInputs firstName="Light" secondName="Medium" thirdName="Dark" />
+    ),
   },
   {
-    id:2,
+    id: 2,
     heading: "Coffee notes ",
     placeholder: "Search Coffee notes...",
-    type: <RadioInputs firstName="Fruits" secondName="Honey" thirdName="Nuts" />
+    type: (
+      <RadioInputs firstName="Fruits" secondName="Honey" thirdName="Nuts" />
+    ),
   },
   {
-    id:3,
+    id: 3,
     heading: "Bean sort",
     placeholder: "Search Bean sort...",
-    type: <RadioInputs firstName="Arabica" secondName="Robusta SL28" className="hidden" />
+    type: (
+      <CheckboxInputs
+        firstName="Arabica"
+        secondName="Robusta SL28"
+        className="hidden"
+      />
+    ),
   },
   {
-    id:4,
+    id: 4,
     heading: "Bean origin ",
     placeholder: "Search Bean origin...",
-    type: <CheckboxInputs firstName="Columbia" secondName="Peru" className="hidden"  />
+    type: (
+      <RadioInputs firstName="Columbia" secondName="Peru" className="hidden" />
+    ),
   },
   {
-    id:5,
+    id: 5,
+    classHidden:"hidden",
     heading: "Altitude (m)",
-    type:<ImageInput/>
+    type: <ImageInput />,
   },
   {
-    id:6,
+    id: 6,
     heading: "Coffee type ",
     placeholder: "Search Coffee type...",
-    type: <RadioInputs firstName="Whole bean" secondName="Pre-grind" thirdName="Pod" />
+    type: (
+      <RadioInputs
+        firstName="Whole bean"
+        secondName="Pre-grind"
+        thirdName="Pod"
+      />
+    ),
   },
   {
-    id:1,
+    id: 1,
     heading: "Roaster location ",
     placeholder: "Search Roaster location...",
-    type: <RadioInputs firstName="Sweden" secondName="France" thirdName="USA" />
+    type: (
+      <CheckboxInputs firstName="Sweden" secondName="France" thirdName="USA" />
+    ),
   },
   {
-    id:7,
+    id: 7,
     heading: "Certifications ",
     placeholder: "Search Certifications...",
-    type: <RadioInputs firstName="Rainforest" secondName="fair trade" className="hidden"  />
+    type: (
+      <CheckboxInputs
+        firstName="Rainforest"
+        secondName="fair trade"
+        className="hidden"
+      />
+    ),
   },
   {
-    id:8,
+    id: 8,
+    classHidden:"hidden",
     heading: "Subscription ",
-    type: <RadioInputs firstName="Yes" secondName="No" className="hidden"  />
+    type: (
+      <RadioInputs
+        firstName="Yes"
+        secondName="No"
+        className="hidden"
+        padding="!pt-0"
+        flex="flex item-center gap-6"
+      />
+    ),
   },
 ];
