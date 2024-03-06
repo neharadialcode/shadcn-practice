@@ -1,6 +1,11 @@
 import React from "react";
 import { CheckMark, Database, ProductData, SearchIcon } from "./Icons";
-import { ChocolateBadge, GreenBadge, OrangeBadge, RedeBadge } from "./AllBadges";
+import {
+  ChocolateBadge,
+  GreenBadge,
+  OrangeBadge,
+  RedeBadge,
+} from "./AllBadges";
 
 export const roasterKeyFeatures = [
   {
@@ -192,9 +197,8 @@ export const qualityData = [
   },
   {
     title: "Bitterness/",
-    span:"Aroma",
+    span: "Aroma",
     value: 5,
-    
   },
   {
     title: "Aftertaste",
@@ -273,5 +277,53 @@ export const beanProductList = [
     badgeThird: <OrangeBadge name={"Honey"} />,
     badgeFourth: <RedeBadge name={"caramel"} />,
   },
-  
+];
+
+// ====== BEAN CATEGORY ===========
+export const beanCategories = [
+  {
+    heading: "Roast level",
+    placeholder: "Search Roast level...",
+    categories: ["Light", "Medium", "Dark"],
+  },
+  {
+    heading: "Coffee notes ",
+    placeholder: "Search Coffee notes...",
+    categories: ["Fruits", "Honey", "Nuts"],
+  },
+  {
+    heading: "Bean sort",
+    placeholder: "Search Bean sort...",
+    categories: ["Arabica", "Robusta SL28"],
+  },
+  {
+    heading: "Bean origin ",
+    placeholder: "Search Bean origin...",
+    categories: ["Columbia", "Peru"],
+  },
+
+  {
+    heading: "Altitude (m)",
+    placeholder: "Search Roast level...",
+    categories: ["Light", "Medium", "Dark"],
+  },
+  {
+    heading: "Coffee type ",
+    placeholder: "Search Coffee type...",
+    categories: ["Whole bean", "Pre-grind", "Pod"],
+  },
+  {
+    heading: "Roaster location ",
+    placeholder: "Search Roaster location...",
+    categories: ["Sweden", "France", "USA"],
+  },
+  {
+    heading: "Certifications ",
+    placeholder: "Search Certifications...",
+    categories: ["Rainforest", "fair trade"],
+  },
+  {
+    heading: "Roast level",
+    categories: ["Yes", "No"],
+  },
 ];
