@@ -9,12 +9,17 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { BlackSearch } from "./Icons";
 
-const CoffeeLocation = () => {
-  const option = ["America", "Sweden", "Nepal"];
-  const [search, setSearch] = useState(option);
+const CoffeeLocation = ({selectedValues, handleChange}) => {
+  const checkboxData = [
+    { id: "CheckBoxOne", label: "CheckBox 1" },
+    { id: "CheckBoxTwo", label: "CheckBox 2" },
+    { id: "CheckBoxThree", label: "CheckBox 3" },
+    { id: "CheckBoxFour", label: "CheckBox 4" },
+  ];
+  const [search, setSearch] = useState(checkboxData);
   const searchhandler = (val) => {
-    const newArr = option.filter((obj) =>
-      obj.toLocaleLowerCase().includes(val.toLocaleLowerCase())
+    const newArr = checkboxData.filter((obj) =>
+      obj.label.toLocaleLowerCase().includes(val.toLocaleLowerCase())
     );
     setSearch(newArr);
   };
@@ -38,7 +43,7 @@ const CoffeeLocation = () => {
           />
         </div>
         <div className="px-4">
-          <CheckboxInputs search={search} />
+          <CheckboxInputs search={search} selectedValues={selectedValues} handleChange={handleChange}  />
         </div>
       </AccordionContent>
     </AccordionItem>

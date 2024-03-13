@@ -9,12 +9,17 @@ import { BlackSearch } from "./Icons";
 import { RadioInputs } from "./InputAll";
 import { useState } from "react";
 
-const RoastLevel = () => {
-  const option = ["One", "Two", "Three", "Four", "Five"];
-  const [search, setSearch] = useState(option);
+const RoastLevel = ({selectedValues, handleChange}) => {
+  const radioData = [
+    { id: "RadioOne", label: "Radio 1" },
+    { id: "RadioTwo", label: "Radio 2" },
+    { id: "RadioThree", label: "Radio 3" },
+    { id: "RadioFour", label: "Radio 4" },
+  ];
+  const [search, setSearch] = useState(radioData);
   const searchhandler = (val) => {
-    const newArr = option.filter((obj) =>
-      obj.toLocaleLowerCase().includes(val.toLocaleLowerCase())
+    const newArr = radioData.filter((obj) =>
+      obj.label.toLocaleLowerCase().includes(val.toLocaleLowerCase())
     );
     setSearch(newArr);
   };
@@ -38,7 +43,7 @@ const RoastLevel = () => {
           />
         </div>
         <div className="px-4">
-          <RadioInputs search={search} />
+          <RadioInputs search={search} selectedValues={selectedValues} handleChange={handleChange} />
         </div>
       </AccordionContent>
     </AccordionItem>

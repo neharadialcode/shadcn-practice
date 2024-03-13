@@ -1,41 +1,42 @@
 import React from "react";
-import { Label } from "@/components/ui/label";
-import { Checkbox } from "@/components/ui/checkbox";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import Image from "next/image";
-export const RadioInputs = (props) => {
+ import Image from "next/image";
+export const RadioInputs = ({ selectedValues, handleChange, search }) => {
   return (
     <>
-      <RadioGroup defaultValue={props.search[0]} className={`gap-0`}>
-        {props.search.map((obj, i) => (
-          <div className="flex items-center space-x-2  py-2">
-            <RadioGroupItem value={obj} id={obj} className="cursor-pointer" />
-            <Label
-              className="text-base text-[#090909] font-normal cursor-pointer"
-              htmlFor={obj}
-            >
-              {obj}
-            </Label>
-          </div>
-        ))}
-      </RadioGroup>
+      {search.map((obj, i) => (
+        <label
+          key={i}
+          className="text-base text-[#090909] font-normal cursor-pointer flex items-center space-x-2 py-1 gap-1"
+          htmlFor={obj.id}
+        >
+          <input
+            type="radio"
+            name="radioGroup"
+            id={obj.id}
+            checked={selectedValues.includes(obj.id)}
+            onChange={handleChange}
+          />
+          {obj.label}
+        </label>
+      ))}
     </>
   );
 };
-export const CheckboxInputs = (props) => {
+export const CheckboxInputs = ({ selectedValues, handleChange, search }) => {
   return (
     <>
-      {props.search.map((obj, i) => (
-        <div className="flex items-center space-x-2 py-2 " key={i}>
-          <Checkbox id={obj} className="cursor-pointer" />
-          <label
-            htmlFor={obj}
-            className="text-base font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
-          >
-            {obj}
-          </label>
-        </div>
-      ))}
+      {search.map((obj, i) => (
+           <label key={i}  className="text-base text-[#090909] font-normal cursor-pointer flex items-center space-x-2 py-1 gap-1" htmlFor={obj.id}>
+            <input
+              type="checkbox"
+              name={obj.id}
+              id={obj.id}
+              checked={selectedValues.includes(obj.id)}
+              onChange={handleChange}
+            />
+            {obj.label}
+          </label>  
+       ))}
     </>
   );
 };
