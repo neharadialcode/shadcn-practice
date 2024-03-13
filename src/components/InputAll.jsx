@@ -6,25 +6,18 @@ import Image from "next/image";
 export const RadioInputs = (props) => {
   return (
     <>
-      <RadioGroup defaultValue="comfortable" className={`gap-0 ${props.flex}`}>
-        <div className="flex items-center space-x-2">
-          <RadioGroupItem value="default" id="r1" />
-          <Label className="text-base text-[#090909] font-normal" htmlFor="r1">
-            {props.firstName}
-          </Label>
-        </div>
-        <div className={`flex items-center space-x-2 pt-4 ${props.padding} `}>
-          <RadioGroupItem value="comfortable" id="r2" />
-          <Label className="text-base text-[#090909] font-normal" htmlFor="r2">
-            {props.secondName}
-          </Label>
-        </div>
-        <div className={`flex items-center space-x-2 pt-4 ${props.className}`}>
-          <RadioGroupItem value="compact" id="r3" />
-          <Label className="text-base text-[#090909] font-normal" htmlFor="r3">
-            {props.thirdName}
-          </Label>
-        </div>
+      <RadioGroup defaultValue={props.search[0]} className={`gap-0`}>
+        {props.search.map((obj, i) => (
+          <div className="flex items-center space-x-2  py-2">
+            <RadioGroupItem value={obj} id={obj} className="cursor-pointer" />
+            <Label
+              className="text-base text-[#090909] font-normal cursor-pointer"
+              htmlFor={obj}
+            >
+              {obj}
+            </Label>
+          </div>
+        ))}
       </RadioGroup>
     </>
   );
@@ -32,33 +25,17 @@ export const RadioInputs = (props) => {
 export const CheckboxInputs = (props) => {
   return (
     <>
-      <div className="flex items-center space-x-2">
-        <Checkbox id="first" />
-        <label
-          htmlFor="first"
-          className="text-base font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-        >
-          {props.firstName}
-        </label>
-      </div>
-      <div className="flex items-center pt-4 space-x-2">
-        <Checkbox id="second" />
-        <label
-          htmlFor="second"
-          className="text-base font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-        >
-          {props.secondName}
-        </label>
-      </div>
-      <div className={`flex items-center pt-4 space-x-2 ${props.className}`}>
-        <Checkbox id="third" />
-        <label
-          htmlFor="third"
-          className="text-base font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-        >
-          {props.thirdName}
-        </label>
-      </div>
+      {props.search.map((obj, i) => (
+        <div className="flex items-center space-x-2 py-2 " key={i}>
+          <Checkbox id={obj} className="cursor-pointer" />
+          <label
+            htmlFor={obj}
+            className="text-base font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
+          >
+            {obj}
+          </label>
+        </div>
+      ))}
     </>
   );
 };

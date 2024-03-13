@@ -1,17 +1,9 @@
-import React from "react";
-import { Button } from "./ui/button";
-import { BlackSearch, CrossIcon } from "./Icons";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { beanCategories } from "./Helper";
-import { Input } from "./ui/input";
-import { Label } from "./ui/label";
-import { RadioGroup, RadioGroupItem } from "./ui/radio-group";
+import { Accordion } from "@/components/ui/accordion";
 import CategoryProduct from "./CategoryProduct";
+import { CrossIcon } from "./Icons";
+import RoastLevel from "./RoastLevel";
+import { Button } from "./ui/button";
+import CoffeeLocation from "./CoffeeLocation";
 
 const BeanCategory = () => {
   return (
@@ -38,35 +30,8 @@ const BeanCategory = () => {
       <div className="flex flex-col sm:flex-row gap-4 lg:gap-10">
         <div className="lg:max-w-[400px] md:max-w-[300px] w-full">
           <Accordion type="single" collapsible className="w-full">
-            {beanCategories.map((category, index) => {
-              return (
-                <AccordionItem
-                  key={index}
-                  value={category.id}
-                  defaultOpen={category.id === 1}
-                  className="mb-8  border-b-0"
-                >
-                  <AccordionTrigger className="ps-6 pe-5 py-4 bg-[#f9fafa] rounded-2xl hover:no-underline font-medium text-lg text-[#090909]">
-                    {category.heading}
-                  </AccordionTrigger>
-                  <AccordionContent className="pt-5">
-                    <div className={`relative mb-[30px] ${category.classHidden}`}>
-                      <Label htmlFor="icon">
-                        <span className="opacity-40 absolute right-4 top-[50%] -translate-y-[50%]">
-                          <BlackSearch />
-                        </span>
-                      </Label>
-                      <Input
-                        id="icon"
-                        placeholder={category.placeholder}
-                        className="border-0 pb-4 px-4 border-b rounded-none focus-visible:outline-none focus-visible:ring-0"
-                      />
-                    </div>
-                    <div className="px-4">{category.type}</div>
-                  </AccordionContent>
-                </AccordionItem>
-              );
-            })}
+            <RoastLevel />
+            <CoffeeLocation />
           </Accordion>
         </div>
         <CategoryProduct />
